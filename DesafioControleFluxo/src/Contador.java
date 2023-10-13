@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Contador {
 
     public static void main(String[] args) {
-        try (Scanner t1erminal = new Scanner(System.in)) {
+        try (Scanner terminal = new Scanner(System.in)) {
             System.out.println("Digite o primeiro parâmetro");
             int parametroUm = terminal.nextInt(); // Use nextInt() para ler um valor inteiro
             System.out.println("Digite o segundo parâmetro");
