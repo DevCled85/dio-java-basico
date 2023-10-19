@@ -1,18 +1,15 @@
-## Getting Started
+## Vamos criar um sistema de aprovação de pedidos.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Vamos criar um sistema de aprovação de pedidos como exemplo. Teremos vários níveis de aprovação, como Gerente, Diretor e CEO. Cada nível decidirá se aprova ou rejeita um pedido com base no valor do pedido.
 
-## Folder Structure
+## Estrutura do projeto
 
-The workspace contains two folders by default, where:
+Primeiro, criaremos uma interface que representa os manipuladores:
+-public interface Approver
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Agora, implementaremos as classes concretas para os diferentes níveis de aprovação:
+-class Manager
+-class Director
+-class CEO
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A classe PurchaseRequest representa uma solicitação de compra com um número de solicitação e um valor associado.
